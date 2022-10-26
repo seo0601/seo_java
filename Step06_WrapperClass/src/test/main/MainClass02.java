@@ -15,5 +15,7 @@ public class MainClass02 {
 		
 		//문자열을 숫자(double)로 바꾸기 "10.3" => 10.3
 		Double result4 = Double.parseDouble("10.3");
+		
+		
 	}
 }
