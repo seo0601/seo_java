@@ -10,7 +10,6 @@ public class TestClass {
 		Random ran = new Random();
 		int ranNum = ran.nextInt(5);
 		System.out.println(items[ranNum]);
-	
 		}
 	
 }
