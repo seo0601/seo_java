@@ -12,12 +12,12 @@ package test.mypac;
  *  - 인터페이스도 다형성에 기여한다.  	
  */
 public interface Remocon {
-	//메소드를 강제해서 객체의 표준을 정하는 느낌이다.
+	//메소드를 강제해서 객체의 표준을 정하는 느낌이다. 모양 자체는 완벽한 클래스이다.
 	
 	//필드는 static final 필드만 가질 수 있다.(static final은 생략 가능), static 영역에 Company가 올라간다.
 	
 	public static final String COMPANY = "LG";
-	
+
 	//메소드는 추상 메소드만 정의할 수 있다.
 	public void up();
 	public void down();

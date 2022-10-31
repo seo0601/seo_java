@@ -7,6 +7,7 @@ import test.mypac.Weapon;
 public class MainClass05 {
 	//필드는 코딩을 하는 곳이 아니라 변수 선언, 값을 만들어 대입, new 만들어서 선언정도 할 수 있다.
 	//필드를 선언하면서 값 얻어내서 대입하는 코드
+	//필드는 공간만 만들어내고 순서대로 출력이 되는 것이 아니다.
 	int num = 999;
 	String name = "Kim";
 	Scanner scan = new Scanner(System.in);
@@ -32,6 +33,7 @@ public class MainClass05 {
 	};
 	
 	public static void main(String[] args) {
+		//메소드를 호출하면서 static 필드에 미리 준비된 값을 전달하기
 		useWeapon(w1);
 	
 		//Anonymous Local Inner Class를 이용해서 Weapon type의 참조값 얻어내기
@@ -42,9 +44,11 @@ public class MainClass05 {
 				System.out.println("다시 공격하자");
 				}	
 		};
+		//메소드를 호출하면서 지역 변수에 미리 준비된 값을 전달하기
 		useWeapon(w2);
 		
 		// 변수를 한 번만 사용하고 사용하지 않을 경우 이렇게도 써도 된다. 안드로이드개발에서 자주 쓸 예정
+		//메소드를 호출하면서 값을 즉석에서 만들어서 전달하기
 		useWeapon(new Weapon() {
 			@Override
 			public void attack() {
