@@ -3,7 +3,7 @@ package test.main;
 import java.util.ArrayList;
 import java.util.List;
 
-import mypac.Car;
+import test.mypac.Car;
 
 public class MainClass04 {
 	public static void main(String[] args) {
