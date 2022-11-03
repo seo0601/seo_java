@@ -26,7 +26,7 @@ public class test_Frame extends JFrame implements ActionListener{
 					
 			this.setLayout(new FlowLayout());
 			
-			JButton startBtn = new JButton("카운트 다운 시작");
+			JButton startBtn = new JButton("카운트 시작");
 			startBtn.addActionListener(this);
 			
 			//프레임에 버튼 추가하기
