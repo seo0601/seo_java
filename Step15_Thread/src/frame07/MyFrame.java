@@ -73,11 +73,9 @@ public class MyFrame extends JFrame implements ActionListener{
 					}
 					//count 1씩 감소시키기
 					count--;
-				}
-				
+				}				
 			}
 		}).start();
-
 	}
 	
 }
