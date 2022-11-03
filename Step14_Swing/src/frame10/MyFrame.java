@@ -19,6 +19,7 @@ public class MyFrame extends JFrame {
 		//흐르듯이 배치하는 레이아웃, 왼쪽으로 정렬하겠다. default는 가운데 정렬이다.
 		setLayout(new FlowLayout(FlowLayout.LEFT));
 		
+		//text를 입력할 수 있는 UI가 생성된다.
 		JTextField inputMsg = new JTextField(10);
 		
 		//글자를 출력할 수 있는 UI

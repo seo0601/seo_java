@@ -24,6 +24,7 @@ public class MyFrame extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLayout(new FlowLayout());
 		
+		//JButton 타입의 sendBtn 변수를 만들어서 JButton 객체를 생성했고 버튼의 이름은 전송이라고 하겠다.
 		JButton sendBtn = new JButton("전송");
 		add(sendBtn);
 		

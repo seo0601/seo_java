@@ -49,8 +49,11 @@ public class MyFrame extends JFrame implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		//눌러진 버튼의 액션 command 값을 읽어온다.
 		String command = e.getActionCommand();
+		
+		//버튼 이름이 send라면, String은 연산자로 비교가 안되고 equals를 사용해서 비교를 해야 한다.
 		if(command.equals("send")) {
 			JOptionPane.showConfirmDialog(this, "전송 합니다.");
+			//버튼 이름이 delete라면
 		}else if(command.equals("delete")) {
 			JOptionPane.showConfirmDialog(this, "삭제 합니다.");
 		}
