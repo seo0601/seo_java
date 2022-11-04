@@ -36,6 +36,7 @@ public class Quiz extends JFrame implements ActionListener {
 		loadMsg = new JTextArea();
 		JButton addBtn = new JButton("추가");
 		JButton loadBtn = new JButton("불러오기");
+		
 		add(addBtn);
 		add(loadBtn);
 		add(inputMsg);
@@ -43,7 +44,8 @@ public class Quiz extends JFrame implements ActionListener {
 		
 		addBtn.addActionListener(this);
 		loadBtn.addActionListener(this);
-		loadMsg.setVisible(false);
+		
+		
 		setVisible(true);
 		
 	}
@@ -57,22 +59,18 @@ public class Quiz extends JFrame implements ActionListener {
 		FileWriter fw = null;
 		FileReader fr=null;
 	    BufferedReader br = null;
-	    
+	    //1.JTextField에 입력한 문자열을 읽어와서
+	    File memoFile  = new File("c:\\acorn202210\\myFolder\\memo.txt");
 	    
 		try {
-		//1.JTextField에 입력한 문자열을 읽어와서
-		File memoFile  = new File("c:\\acorn202210\\myFolder\\memo.txt");
-		
-		
 		//어떤 버튼을 눌렀는지 알아내서 결과를 얻어낼 수 있다.
 		String command = e.getActionCommand();
 		if(command.equals("추가")) {
 			//1.JTextField에 입력한 문자열을 읽어와서
 			String msg = inputMsg.getText();
 			fw = new FileWriter(memoFile, true);
-			fw.append(msg);
+			fw.append(msg+"\r\n");
 			fw.flush();
-			fw.close();
 			
 		}else if(command.equals("불러오기")) {
 			fr = new FileReader(memoFile); 
@@ -87,8 +85,8 @@ public class Quiz extends JFrame implements ActionListener {
 			loadMsg.append(line+"\r\n");
 		  }
 		}
-	  }catch(Exception e1) {
-		  e1.printStackTrace();
+	  }catch(Exception e2) {
+		  e2.printStackTrace();
 	  }
 		finally {
 	    	  try {
