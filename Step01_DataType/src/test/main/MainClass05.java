@@ -18,6 +18,7 @@ public class MainClass05 {
 		
 		//name 변수를 비우기 (null은 참조 데이터 type이 담길 수 있는 빈 공간을 의미한다.)
 		name = null;
+		
 	}
 
 }

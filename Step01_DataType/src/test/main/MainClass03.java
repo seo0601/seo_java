@@ -19,7 +19,7 @@ public class MainClass03 {
 		
 		//비교 연산의 결과로 얻어진 boolean 값 담기
 		boolean isGreater = 10>1;
-		
+		System.out.println(isGreater);
 		//논리 연산의 결과로 얻어진 boolean 값 담기
 		boolean result = true||false;
 		

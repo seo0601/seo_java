@@ -4,7 +4,7 @@ public class MainClass08 {
 	public static void main(String[] args) {
 		String str = "abcde12345";
 		int result = str.length(); //문자열이 길이가 int타입으로 return된다.
-		char result2 = str.charAt(0); //abcde12345에서 4의 위치를 return 한다.
+		char result2 = str.charAt(0); //abcde12345에서 0의 위치를 return 한다.
 		/*
 		 *  String 객체의 메소드를 활용해서
 		 *  str 변수 안에 있는 문자를 모두 대문자(UpperCase)로 변환해서

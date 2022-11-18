@@ -12,7 +12,6 @@ public class MainClass03 {
 		
 		//p1 안에 있는 참조 값을 p2라는 Phone data type 지역 변수에 대입하기
 		Phone p2 = p1;
-		
 		//p1 안에 잇는 참조 값을 p3라는 Object type 지역 변수에 대입하기
 		Object p3 = p1;
 		
